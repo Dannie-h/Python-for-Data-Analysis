@@ -1,0 +1,90 @@
+
+📝 Python Syntax Cheat Sheet (Beginner)
+
+🔁 Loops
+
+Loop through a list:
+for item in my_list:
+    print(item)
+
+Loop through a list of dictionaries:
+for item in list_of_dicts:
+    print(item['key'])
+
+Loop through a dictionary:
+for key, value in my_dict.items():
+    print(key, value)
+
+
+📦 List Comprehensions
+
+Basic comprehension:
+squares = [num * num for num in numbers]
+
+With a condition:
+evens = [num for num in numbers if num % 2 == 0]
+
+From a list of dictionaries:
+titles = [job['title'] for job in job_postings if job['location'] == 'New York']
+
+
+🧰 Functions
+
+Define a function:
+def greet(name):
+    print(f"Hello {name}")
+
+With a return value:
+def double(n):
+    return n * 2
+
+Function with default parameter:
+def bonus(salary, rate=0.1):
+    return salary * rate
+
+
+📊 Working with Dictionaries
+
+Access values:
+job['title']
+
+Loop through dict:
+for key, value in job.items():
+    print(key, value)
+
+
+🔣 Strings
+
+First letter (initials):
+name[0]
+
+Reverse a string:
+word[::-1]
+
+Capitalize each word:
+name.title()
+
+
+🔡 Conditions
+
+if x > 10:
+    ...
+elif x == 10:
+    ...
+else:
+    ...
+
+Multiple conditions:
+if a > 10 and b < 5:
+    ...
+
+
+📚 Useful Built-in Functions
+
+| Function         | Use                            |
+|------------------|---------------------------------|
+| len()            | Count elements                 |
+| sum()            | Add numbers in a list          |
+| set()            | Remove duplicates              |
+| sorted()         | Sort a list                    |
+| max(), min()     | Largest/smallest in a list     |
